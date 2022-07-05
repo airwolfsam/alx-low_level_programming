@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-       printsomething();
+printsomething();
 
-       return (0);
+return (0);
 }
