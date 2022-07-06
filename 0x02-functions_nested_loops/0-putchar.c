@@ -1,12 +1,19 @@
+#include "main.h"
+
 /**
- * main - prints to string
- * Description: Prints positive, negative or zero
- * Return: 0
+ * 0-putchar.c - prints "putchar"
+ *
+ * Return: nothing 
  */
-#include <stdio.h>
-int main(void)
+void putchar(void)
 {
-printf("_putchar");
-putchar ('\n');
-return (0);
+	_putchar('_');
+        _putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 }
