@@ -2,6 +2,7 @@
 #define MAIN_H
 
 int _putchar(char c);
-void printsomething(void);
+void 0-putchar.c(void);
+
 
 #endif
