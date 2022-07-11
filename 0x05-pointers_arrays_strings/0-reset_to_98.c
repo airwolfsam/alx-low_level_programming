@@ -1,10 +1,11 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-*reset_to_98 -> a function to update the reference of a pointer
-* @n: pointer to n to be updated
-* /
- void reset_to_98(int *n);
+ * reset_to_98 - Set pointer param to 98.
+ * @n: int type pointer
+ */
+
+void reset_to_98(int *n)
 {
- *n = 98;
+	*n = 98;
 }
