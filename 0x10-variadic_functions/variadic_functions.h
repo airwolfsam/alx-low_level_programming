@@ -1,29 +1,30 @@
-#ifndef _VARIADIC_FUNCTIONS_H
-#define _VARIADIC_FUNCTIONS_H
+#ifndef __VARIADIC_H__
+#define __VARIADIC_H__
+
 #include <stdarg.h>
 #include <stdio.h>
+int _putchar(char c);
 
-/**
-* struct fmt - Struct format
-* @f: type format
-* @p: print function
-*/
-typedef struct fmt
-{
-	char *f;
-	void (*p)(va_list s);
-} my_fmt;
-
-
-/*prototypes*/
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
-int _strlen_recursion(char *s);
-void print_c(va_list s);
-void print_i(va_list s);
-void print_f(va_list s);
-void print_s(va_list s);
+void print_char(va_list);
+void print_int(va_list);
+void print_float(va_list);
+void print_string(va_list);
 
-#endif
+/**
+ * struct format_t - entry signs
+ *
+ * @t: type of variables
+ * @f: function to print type of variable
+ */
+typedef struct format_t
+{
+char *t;
+void (*f)(va_list);
+}
+format_t;
+
+#endif /* VARIADIC_FUNCTIONS.H */
